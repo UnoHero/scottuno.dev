@@ -1,0 +1,22 @@
+{
+  "header": {
+    "home": "Hjem",
+    "portfolio": "Portefølje",
+    "cv": "CV",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "copyright": "© 2024 Scottuno.dev. Alle rettigheter reservert."
+  },
+  "404": {
+    "title": "Siden ble ikke funnet",
+    "message": "Beklager, siden du leter etter eksisterer ikke."
+  },
+  "contact": {
+    "title": "Kontakt Oss",
+    "name": "Navn",
+    "email": "E-post",
+    "message": "Melding",
+    "send": "Send"
+  }
+}
