@@ -1,12 +1,15 @@
 {
   "header": {
-    "home": "Hjem",
-    "portfolio": "Portefølje",
-    "cv": "CV",
-    "contact": "Kontakt"
+    "head": "Portefølje"
+  },
+  "home": {
+    "title": "Velkommen til Scottuno.dev"
   },
   "footer": {
-    "copyright": "© 2024 Scottuno.dev. Alle rettigheter reservert."
+    "copyright": "© 2024 Scottuno",
+    "author": "Scott Uno Gundersen",
+    "tlf": "94146461",
+    "mail": "scottunogundersen@gmail.com"
   },
   "404": {
     "title": "Siden ble ikke funnet",
