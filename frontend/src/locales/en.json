@@ -1,0 +1,22 @@
+{
+  "header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2024 Scottuno.dev. All rights reserved."
+  },
+  "404": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  }
+}
