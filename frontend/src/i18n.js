@@ -26,4 +26,12 @@ i18n
     },
   });
 
+// Set initial lang attribute when the site is loaded
+document.documentElement.lang = i18n.language;
+
+// Add event listener to update lang attribute when language changes
+i18n.on('languageChanged', (lng) => {
+  document.documentElement.lang = lng; // Set lang attribute of html tag
+});
+
 export default i18n;
