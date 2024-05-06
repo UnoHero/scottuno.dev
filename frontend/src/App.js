@@ -1,44 +1,33 @@
 import React from "react";
-import {BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 
-// Pages
-import Home from "./pages/Home"
-import Projects from './pages/Projects';
-import CV from './pages/CV';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import CV from "./pages/CV";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
+import DarkModeToggle from "./components/layout/DarkModeToggle";
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider>
       <BrowserRouter>
-        <div className="pages">
-          <Routes>
-            <Route 
-              path="/"
-              element={<Home />}
-            />
-            <Route 
-              path="/projects"
-              element={<Projects />}
-            />
-            <Route 
-              path="/cv"
-              element={<CV />}
-            />
-            <Route
-              path="/contact"
-              element={<Contact />}
-            />
-            <Route
-              path="*"
-              element={<NotFound />}
-              />
-          </Routes>
+        <div className="App">
+          <DarkModeToggle />
+          <div className="pages">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/cv" element={<CV />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
-    </div>
+    </ThemeProvider>
   );
 }
 
