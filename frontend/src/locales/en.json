@@ -1,16 +1,15 @@
 {
   "header": {
-    "home": "Home",
-    "portfolio": "Portfolio",
-    "cv": "CV",
-    "contact": "Contact"
+    "head": "Portfolio"
+  },
+  "home": {
+    "title": "Welcome to Scottuno.dev"
   },
   "footer": {
-    "copyright": "© 2024 Scottuno.dev. All rights reserved."
-  },
-  "404": {
-    "title": "Page Not Found",
-    "message": "Sorry, the page you are looking for does not exist."
+    "copyright": "© 2024 Scottuno",
+    "author": "Scott Uno Gundersen",
+    "tlf": "94146461",
+    "mail": "scottunogundersen@gmail.com"
   },
   "contact": {
     "title": "Contact Us",
@@ -18,5 +17,9 @@
     "email": "Email",
     "message": "Message",
     "send": "Send"
+  },
+  "404": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist."
   }
 }
