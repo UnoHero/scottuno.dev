@@ -7,17 +7,17 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = window.document.documentElement;
-    
+
     // Check if the user prefers dark mode
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     // Set initial mode based on user's preference if not already set
-    if (!darkMode) {
+    if (darkMode === null) {
       setDarkMode(prefersDarkMode);
     }
 
     // Toggle theme based on user's preference
-    if (prefersDarkMode) {
+    if (darkMode === true) {
       root.classList.add("dark-theme");
       root.classList.remove("light-theme");
     } else {
