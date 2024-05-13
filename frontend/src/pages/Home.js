@@ -3,16 +3,14 @@
 // Imports
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styled from "styled-components"
 
-// Components
+// common Components
 import Header from "../components/common/Header"
 import Footer from "../components/common/Footer"
 
-// Styled components
-const Carousel = styled.div`
+// partials Components
+import ProjectCarousel from '../components/partials/ProjectCarousel';
 
-`;
 
 const Home = () => {
   const { t } = useTranslation();
@@ -25,7 +23,7 @@ const Home = () => {
         <h2>
           {t("home.title")}
         </h2>
-        <Carousel />
+        <ProjectCarousel />
       </section>
       
       <Footer />
