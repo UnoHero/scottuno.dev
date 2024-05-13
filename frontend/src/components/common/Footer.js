@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>{t('footer.copyright')}</p>
+      <p><b>{t('footer.copyright')}</b></p>
       <p>{t('footer.author')}</p>
       <p>{t("footer.tlf")}</p>
       <p>{t('footer.mail')}</p>

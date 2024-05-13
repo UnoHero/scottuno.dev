@@ -8,14 +8,13 @@ import CV from "./pages/CV";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
-import DarkModeToggle from "./components/layout/DarkModeToggle";
 
 function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
         <div className="App">
-          <DarkModeToggle />
+          
           <div className="pages">
             <Routes>
               <Route path="/" element={<Home />} />
