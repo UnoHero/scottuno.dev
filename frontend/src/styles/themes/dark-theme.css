@@ -1,6 +1,10 @@
 /* dark-theme.css */
-.dark-theme {
-  background-color: #333;
-  color: #fff;
-}
 
+.dark-theme {
+  --background: #050c0f;
+  --primary: #8ecfe6;
+  --secondary: #19708f;
+  --accent: #40bbe7;
+  --font-p: #0b191e;
+  --font-s: #e1eff4;
+}

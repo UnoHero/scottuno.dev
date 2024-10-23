@@ -21,7 +21,7 @@ const Home = () => {
 
       <section>
         <h2>
-          {t("home.title")}
+          {t("pages.home.title")}
         </h2>
         <ProjectCarousel />
       </section>

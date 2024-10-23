@@ -1,5 +1,10 @@
 /* light-theme.css */
+
 .light-theme {
-  background-color: #fff;
-  color: #333;
+  --background: #f0f7fa;
+  --primary: #195971;
+  --secondary: #70c6e6;
+  --accent: #1892bf;
+  --font-p: #e1eff4;
+  --font-s: #0b191e;
 }

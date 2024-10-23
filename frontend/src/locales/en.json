@@ -2,8 +2,18 @@
   "header": {
     "head": "Portfolio"
   },
-  "home": {
-    "title": "Welcome to Scottuno.dev"
+  "pages": {
+    "home": {
+      "title": "Welcome to Scottuno.dev"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "email": "E-mail addres",
+      "fullName": "Full Name",
+      "subject": "Subject",
+      "message": "Your Message...",
+      "submitButton": "Send"
+    }
   },
   "footer": {
     "copyright": "© 2024 Scottuno.dev",

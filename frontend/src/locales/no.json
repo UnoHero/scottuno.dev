@@ -2,8 +2,18 @@
   "header": {
     "head": "Portefølje"
   },
-  "home": {
-    "title": "Velkommen til Scottuno.dev"
+  "pages": {
+    "home": {
+      "title": "Velkommen til Scottuno.dev"
+    },
+    "contact": {
+      "title": "Kontakt meg",
+      "email": "E-post addresse",
+      "fullName": "Fult Navn",
+      "subject": "Emne",
+      "message": "Meldingen din...",
+      "submitButton": "Send"
+    }
   },
   "footer": {
     "copyright": "© 2024 Scottuno.dev",
@@ -11,15 +21,15 @@
     "tlf": "+47 94146461",
     "mail": "scottunogundersen@gmail.com"
   },
-  "404": {
-    "title": "Siden ble ikke funnet",
-    "message": "Beklager, siden du leter etter eksisterer ikke."
-  },
   "contact": {
     "title": "Kontakt Oss",
     "name": "Navn",
     "email": "E-post",
     "message": "Melding",
     "send": "Send"
+  },
+  "404": {
+    "title": "Siden ble ikke funnet",
+    "message": "Beklager, siden du leter etter eksisterer ikke."
   }
 }
