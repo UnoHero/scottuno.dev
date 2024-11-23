@@ -12,7 +12,13 @@
       "fullName": "Fult Navn",
       "subject": "Emne",
       "message": "Meldingen din...",
-      "submitButton": "Send"
+      "submitButton": "Send",
+      "card": {
+        "title": "Kontakt Kort",
+        "nameLabel": "Navn:",
+        "tlfLabel": "Nummer:",
+        "emailLabel": "E-post:"
+      }
     }
   },
   "footer": {

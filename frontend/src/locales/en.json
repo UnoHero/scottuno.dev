@@ -12,7 +12,13 @@
       "fullName": "Full Name",
       "subject": "Subject",
       "message": "Your Message...",
-      "submitButton": "Send"
+      "submitButton": "Send",
+      "card": {
+        "title": "Contact Card",
+        "nameLabel": "Name:",
+        "tlfLabel": "Number:",
+        "emailLabel": "E-mail:"
+      }
     }
   },
   "footer": {
@@ -21,6 +27,8 @@
     "tlf": "+47 94146461",
     "mail": "scottunogundersen@gmail.com"
   },
+
+
   "contact": {
     "title": "Contact Us",
     "name": "Name",

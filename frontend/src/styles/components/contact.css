@@ -9,13 +9,14 @@
 
 h2 {
   text-align: center;
-  margin:0px;
+  margin: 0px;
   padding: 30px 0 20px 0;
 }
 
 .contact-form ul {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .contact-form li {
@@ -26,7 +27,6 @@ h2 {
 .contact-form label {
   display: block;
   font-size: 1em;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -41,12 +41,12 @@ h2 {
 
 .contact-form textarea {
   width: 100%;
-  max-width: 80%;
+  max-width: 75%;
   padding: 10px;
   border-radius: 4px;
   font-size: 1em;
   height: 15ch;
-  margin: 20px 0 50px 0;
+  margin: 4% 0 5% 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease;
 }
@@ -90,3 +90,38 @@ textarea::placeholder {
 }
 
 
+/* Contact Card */
+
+p {
+  margin: 0;
+}
+
+.contact-card {
+  width: 300px;
+  height: 450px;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondary);
+
+}
+
+.close-icon {
+  position: absolute; 
+  top: 5%; 
+  right: 3%; 
+  color: #333;
+  cursor: pointer;
+}
+
+.contact-detail{
+  color: var(--font-s);
+  text-align: center;
+  margin: 15% 0 5% 0;
+}
+
+.contact-detail a, p {
+  margin: 2% 0 0 0;
+}
