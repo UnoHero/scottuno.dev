@@ -83,7 +83,7 @@ const Contact = () => {
             <Socials />
           </div>
         ) : (
-          <Socials />
+          <Socials /> // Meybe use Styled components so the Socials can have different CSS values
         )}
 
       </section>
