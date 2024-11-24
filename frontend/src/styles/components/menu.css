@@ -1,0 +1,49 @@
+/* menu.css */
+
+/* Initially, the menu is hidden */
+.burger-menu {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    right: -290px; /* Initially off-screen */
+    width: 290px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    transition: right 0.3s ease-in-out; /* Smooth transition for sliding effect */
+    padding-top: 60px;
+  }
+    
+  /* When the menu is open, move it into view */
+  .burger-menu.open {
+    right: 0;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+    
+  ul li {
+    padding: 10px;
+    text-align: center;
+  }
+    
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+    
+  .menu-extras {
+    bottom: 20px;
+    left: 20px;
+  }
+  
