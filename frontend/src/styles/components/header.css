@@ -1,0 +1,32 @@
+header {
+    display: grid; 
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px; 
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    width: 100%; 
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--font-s);
+    gap: 10px;
+}
+
+
+header img {
+    width: 50px;
+    height: 50px;
+    justify-self: start;
+}
+  
+header h1 {
+    margin: 0; 
+    font-size: 1.5em;
+    text-align: center;
+    justify-self: center;
+}
+
+header i {
+    justify-self: end;
+    cursor: pointer;
+}

@@ -1,17 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from "../layout/LanguageSwitcher";
 
-import DarkModeToggle from "../layout/DarkModeToggle";
+// CSS for the header page
+import "../../styles/components/header.css";
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
     <header>
+      <img src='https://placehold.co/50x50' alt='Logo'></img>
       <h1>{t('header.head')}</h1>
-      <LanguageSwitcher />
-      <DarkModeToggle />
+      <i class="fa-solid fa-bars fa-2xl"></i>
     </header>
   );
 }

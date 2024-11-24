@@ -10,7 +10,7 @@
 h2 {
   text-align: center;
   margin: 0px;
-  padding: 30px 0 20px 0;
+  padding: 35px 0 20px 0;
 }
 
 .contact-form ul {
@@ -98,7 +98,7 @@ p {
 
 .contact-card {
   width: 85%;
-  height: 60%;
+  height: 65%;
   z-index: 100;
   position: fixed;
   top: 52%;
