@@ -1,53 +1,40 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, {useEffect} from 'react';
+import { slide as BurgerMenu } from 'react-burger-menu';
 
 import LanguageSwitcher from "../layout/LanguageSwitcher";
 import DarkModeToggle from "../layout/DarkModeToggle";
-
-import Socials from "./Socials"
+import Socials from "./Socials";
 
 // CSS for the menu
 import "../../styles/components/menu.css";
 
 const Menu = ({ isOpen, toggleMenu }) => {
-  const menuRef = useRef(null);
 
-  // Close the menu if a click is detected outside of it
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
-        toggleMenu(); 
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen, toggleMenu]);
+    document.body.style.overflw = isOpen ? "hidden" : "auto";
+  }, [isOpen])
 
   return (
-    <div ref={menuRef} className={`burger-menu ${isOpen ? 'open' : ''}`}>
+    <BurgerMenu
+      isOpen={isOpen}
+      onStateChange={(state) => toggleMenu(state.isOpen)}
+      right
+      customBurgerIcon={<i className="fa-solid fa-bars fa-xl" />}
+
+    >
       <ul>
-        <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-        <li><a href="#about" onClick={toggleMenu}>About</a></li>
-        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+        <li><a href="#home" onClick={() => toggleMenu(false)}>Home</a></li>
+        <li><a href="#about" onClick={() => toggleMenu(false)}>About</a></li>
+        <li><a href="#contact" onClick={() => toggleMenu(false)}>Contact</a></li>
       </ul>
 
       <div className="menu-extras">
         <LanguageSwitcher />
         <DarkModeToggle />
-
         <Socials />
       </div>
-    </div>
+    </BurgerMenu>
   );
-};
-
-Menu.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.func.isRequired,
 };
 
 export default Menu;

@@ -13,6 +13,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 :link {
@@ -46,6 +47,7 @@ footer {
   width: 100%; 
   background-color: var(--background);
   color: var(--font-s);
+  z-index: 10001;
 }
 
 footer p {

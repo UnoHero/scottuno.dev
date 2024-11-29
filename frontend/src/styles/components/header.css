@@ -11,6 +11,7 @@ header {
     background-color: var(--background);
     color: var(--font-s);
     gap: 10px;
+    overflow-y: hidden;
 }
 
 header img {

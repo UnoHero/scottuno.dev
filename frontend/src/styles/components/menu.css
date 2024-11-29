@@ -1,49 +1,71 @@
-/* menu.css */
+/* Customizing the burger menu for responsiveness */
 
-/* Initially, the menu is hidden */
-.burger-menu {
-    position: absolute;
-    z-index: 50;
-    top: 0;
-    right: -290px; /* Initially off-screen */
-    width: 290px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 1);
-    color: #fff;
-    transition: right 0.3s ease-in-out; /* Smooth transition for sliding effect */
-    padding-top: 60px;
+/* Burger menu button */
+.bm-burger-button {
+  position: fixed;
+  top: 3%;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Menu container */
+.bm-menu {
+  background: var(--background);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar in Chrome/Safari */
+.bm-menu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menu items */
+.bm-item-list {
+  color: #fff;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: var(--font-s);
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: var(--font-h);
+}
+
+/* Overlay styling */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  /* Burger and cross buttons */
+  .bm-burger-button, .bm-cross-button {
+    top: 3%;
+    right: 5%;
   }
-    
-  /* When the menu is open, move it into view */
-  .burger-menu.open {
-    right: 0;
+
+  /* Menu size */
+  .bm-menu {
+    width: 100%; /* Full-screen menu for smaller devices */
   }
-  
-  .close-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+
+  /* Increase font size for touch devices */
+  .bm-item {
+    font-size: 1.25em;
   }
-  
-  ul {
-    list-style: none;
-    padding: 0;
+
+  /* Adjust padding inside the menu */
+  .bm-menu {
+    padding: 1.5em 1em 0;
   }
-    
-  ul li {
-    padding: 10px;
-    text-align: center;
-  }
-    
-  ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-    
-  .menu-extras {
-    bottom: 20px;
-    left: 20px;
-  }
-  
+}
