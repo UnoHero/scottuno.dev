@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header>
       <img src="https://placehold.co/50x50" alt="Logo" />
-      <h1>{t('header.head')}</h1>
+      <h1>{t('components.header.head')}</h1>
 
       {/* Toggle icon (hamburger or X) */}
       <i 
