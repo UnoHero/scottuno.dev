@@ -13,15 +13,21 @@ const Header = () => {
   const toggleMenu = (isOpen) => setMenuOpen(isOpen);
 
   return (
-    <>
-      <header>
-        <img src="https://placehold.co/50x50" alt="Logo" />
-        <h1>{t('header.head')}</h1>
+    <header>
+      <img src="https://placehold.co/50x50" alt="Logo" />
+      <h1>{t('components.header.head')}</h1>
 
-      </header>
-      {/* Burger menu */}
-      <Menu isOpen={menuOpen} toggleMenu={toggleMenu} />
-    </>
+      {/* Toggle icon (hamburger or X) */}
+      <i 
+        className={`fa-solid ${isMenuOpen ? 'fa-x' : 'fa-bars'} fa-xl`} 
+        onClick={handleMenuToggle} 
+        role="button" 
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+      ></i>
+
+      {/* Pass the menu open state and toggle handler */}
+      <Menu isOpen={isMenuOpen} toggleMenu={handleMenuToggle} />
+    </header>
   );
 };
 

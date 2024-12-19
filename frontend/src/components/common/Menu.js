@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
 
+import { useTranslation } from 'react-i18next';
+
 import LanguageSwitcher from "../layout/LanguageSwitcher";
 import DarkModeToggle from "../layout/DarkModeToggle";
 import Socials from "./Socials";
@@ -9,7 +11,11 @@ import Socials from "./Socials";
 import "../../styles/components/menu.css";
 
 const Menu = ({ isOpen, toggleMenu }) => {
+  const { t } = useTranslation();
 
+  const menuRef = useRef(null);
+
+  // Close the menu if a click is detected outside of it
   useEffect(() => {
     document.body.style.overflw = isOpen ? "hidden" : "auto";
   }, [isOpen])
@@ -23,9 +29,9 @@ const Menu = ({ isOpen, toggleMenu }) => {
 
     >
       <ul>
-        <li><a href="#home" onClick={() => toggleMenu(false)}>Home</a></li>
-        <li><a href="#about" onClick={() => toggleMenu(false)}>About</a></li>
-        <li><a href="#contact" onClick={() => toggleMenu(false)}>Contact</a></li>
+        <li><a href="home" onClick={toggleMenu}>{t('components.menu.urls.home')}</a></li>
+        <li><a href="about" onClick={toggleMenu}>{t('components.menu.urls.about')}</a></li>
+        <li><a href="contact" onClick={toggleMenu}>{t('components.menu.urls.contact')}</a></li>
       </ul>
 
       <div className="menu-extras">

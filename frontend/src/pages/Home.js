@@ -8,9 +8,6 @@ import { useTranslation } from 'react-i18next';
 import Header from "../components/common/Header"
 import Footer from "../components/common/Footer"
 
-// partials Components
-import ProjectCarousel from '../components/partials/ProjectCarousel';
-
 
 const Home = () => {
   const { t } = useTranslation();
@@ -19,13 +16,11 @@ const Home = () => {
     <div>
       <Header />
 
-      <section>
+      <section className="main-box">
         <h2>
           {t("pages.home.title")}
         </h2>
-        <ProjectCarousel />
       </section>
-      
       <Footer />
     </div>
   );

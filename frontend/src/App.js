@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 
 import Home from "./pages/Home";
@@ -18,6 +18,7 @@ function App() {
           <div className="pages">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Navigate to ="/" replace/>} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/cv" element={<CV />} />
               <Route path="/contact" element={<Contact />} />

@@ -1,7 +1,4 @@
 {
-  "header": {
-    "head": "Portfolio"
-  },
   "pages": {
     "home": {
       "title": "Welcome to Scottuno.dev"
@@ -19,25 +16,35 @@
         "tlfLabel": "Number:",
         "emailLabel": "E-mail:"
       }
+    },
+    "404": {
+      "title": "Page Not Found",
+      "message": "Sorry, the page you are looking for does not exist."
     }
   },
-  "footer": {
-    "copyright": "© 2024 Scottuno.dev",
-    "author": "Scott Uno Gundersen",
-    "tlf": "+47 94146461",
-    "mail": "scottunogundersen@gmail.com"
-  },
-
-
-  "contact": {
-    "title": "Contact Us",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send"
-  },
-  "404": {
-    "title": "Page Not Found",
-    "message": "Sorry, the page you are looking for does not exist."
+  "components": {
+    "header": {
+      "head": "Portfolio"
+    },
+    "footer": {
+      "copyright": "© 2024 Scottuno.dev",
+      "author": "Scott Uno Gundersen",
+      "tlf": "+47 94146461",
+      "mail": "scottunogundersen@gmail.com",
+      "contact": {
+        "title": "Contact Us",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+      }
+    },
+    "menu": {
+      "urls": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+      }
+    }
   }
 }
