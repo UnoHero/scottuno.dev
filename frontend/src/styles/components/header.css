@@ -22,9 +22,11 @@ header img {
 header h1 {
     margin: 0; 
     font-size: 1.5em;
-    text-align: center;
-    justify-self: center;
-    z-index: 51;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 51; 
+    white-space: nowrap; 
 }
 
 header i {
@@ -36,7 +38,6 @@ header i {
 .fa-bars {
     transform: rotate(0deg);
     color: var(--font-s);
-
 }
 
 .fa-x {
