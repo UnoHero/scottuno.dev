@@ -8,12 +8,9 @@ import "../../styles/components/header.css";
 
 const Header = () => {
   const { t } = useTranslation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle the menu visibility
-  const handleMenuToggle = () => {
-    setIsMenuOpen(prevState => !prevState);
-  };
+  const toggleMenu = (isOpen) => setMenuOpen(isOpen);
 
   return (
     <header>

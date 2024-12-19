@@ -1,12 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, {useEffect} from 'react';
+import { slide as BurgerMenu } from 'react-burger-menu';
 
 import { useTranslation } from 'react-i18next';
 
 import LanguageSwitcher from "../layout/LanguageSwitcher";
 import DarkModeToggle from "../layout/DarkModeToggle";
-
-import Socials from "./Socials"
+import Socials from "./Socials";
 
 // CSS for the menu
 import "../../styles/components/menu.css";
@@ -18,21 +17,17 @@ const Menu = ({ isOpen, toggleMenu }) => {
 
   // Close the menu if a click is detected outside of it
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
-        toggleMenu(); 
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen, toggleMenu]);
+    document.body.style.overflw = isOpen ? "hidden" : "auto";
+  }, [isOpen])
 
   return (
-    <div ref={menuRef} className={`burger-menu ${isOpen ? 'open' : ''}`}>
+    <BurgerMenu
+      isOpen={isOpen}
+      onStateChange={(state) => toggleMenu(state.isOpen)}
+      right
+      customBurgerIcon={<i className="fa-solid fa-bars fa-xl" />}
+
+    >
       <ul>
         <li><a href="home" onClick={toggleMenu}>{t('components.menu.urls.home')}</a></li>
         <li><a href="about" onClick={toggleMenu}>{t('components.menu.urls.about')}</a></li>
@@ -42,16 +37,10 @@ const Menu = ({ isOpen, toggleMenu }) => {
       <div className="menu-extras">
         <LanguageSwitcher />
         <DarkModeToggle />
-
         <Socials />
       </div>
-    </div>
+    </BurgerMenu>
   );
-};
-
-Menu.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.func.isRequired,
 };
 
 export default Menu;
