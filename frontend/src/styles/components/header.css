@@ -3,7 +3,7 @@ header {
     display: grid; 
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 10px; 
+    padding: 10px 25px; 
     text-align: center; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
     width: 100%; 
@@ -30,17 +30,17 @@ header h1 {
 header i {
     justify-self: end;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for icon toggle */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .fa-bars {
     transform: rotate(0deg);
     color: var(--font-s);
-    /* if z index = 51 so the animation is preety... menu close brakes*/
+
 }
 
 .fa-x {
-    transform: rotate(180deg); /* Rotate the X icon for a smoother effect */
+    transform: rotate(180deg); 
     color: var(--font-s);
     z-index: 51;
 }
